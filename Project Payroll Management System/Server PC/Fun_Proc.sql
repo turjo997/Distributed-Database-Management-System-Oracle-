@@ -30,21 +30,6 @@ create or replace view EmpView as (select * from Emp union select * from Emp3@si
 create or replace view IncreView as (select * from Incre union select * from Incre3@site);
 
 
-/*
-create or replace view CompensationView as (select * from Compensation union select * from Compensation1);
-create or replace view DeductionView as (select * from Deduction union select * from Deduction1);
-create or replace view ManagerView as (select * from Manager union select * from Manager1);
-create or replace view DepartmentView as (select * from Department union select * from Department1);
-create or replace view EmployeeView as (select * from Employee union select * from Employee1);
-create or replace view OvertimeView as (select * from Overtime union select * from Overtime1);
-create or replace view TransactionView as (select * from tran1 union select * from tran2);
-create or replace view AuditView as (select * from audit1 union select * from audit2);
-create or replace view LeaveView as (select * from Leave union select * from Leave2);
-create or replace view GradeView as (select * from Grade union select * from Grade1);
-create or replace view EmpView as (select * from Emp union select * from Emp2);
-create or replace view IncreView as (select * from Incre union select * from Incre2);
-*/
-
 create or replace package mypack as
 
 procedure Allocated_Department_Employee;
@@ -60,11 +45,6 @@ procedure Part_FullTImeInfo;
 
 procedure Promotion_Employee;
 procedure Promotion_Manager;
-
---function calculate_compensation(D in number , A out number , B out number , C out number)
---return number;
---function calculate_Deduction(D in number , A out number , B out number , C out number)
---return number;
 
 end mypack;
 /
