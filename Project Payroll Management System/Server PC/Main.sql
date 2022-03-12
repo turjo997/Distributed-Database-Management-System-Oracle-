@@ -76,23 +76,9 @@ BEGIN
     ELSIF N = 10 THEN
      mypack.Promotion_Manager;
 
-/*
-    ELSIF N = 11 THEN	
-	 S := &Y;
-	 res := mypack.calculate_compensation(S , B , C , D);
-	 DBMS_OUTPUT.PUT_LINE(res || ' ' || B || ' ' || C || ' ' || D);
-
-    ELSIF N = 12 THEN	
-	
-	 S := &Y;
-	 
-	 res := mypack.calculate_Deduction(S , B , C , D);
-	 DBMS_OUTPUT.PUT_LINE(res || ' ' || B || ' ' || C || ' ' || D);
-	 */
 	ELSE RAISE myException;
 	
 	END IF;
-
 
 	EXCEPTION 
 		When myException THEN
